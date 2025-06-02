@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dental Clinic</title>
+</head>
+<body>
+
+    <p>
+        Hola paciente:
+
+        <span th:text="${name}"/>
+        <span th:text="${lastName}"/>
+    </p>
+
+    <p>
+        Hola odontólogo:
+
+        <span th:text="${nameDentist}"/>
+        <span th:text="${lastNameDentist}"/>
+    </p>
+
+<p>
+    Matrícula:
+    <span th:text="${registration}"/>
+</p>
+
+</body>
+</html>
